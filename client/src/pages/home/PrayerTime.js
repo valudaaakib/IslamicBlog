@@ -64,7 +64,13 @@ const PrayerTime = () => {
                     <p className='text-center pt-5'>Powerd by <span className='hover:text-white'>Muslim Pro</span></p>
                 </div>
                 <div className='salah-left-section'>
-                    my name is amil arif patel
+                    <p className='prayer-right-header'>Welcome to the Islamic Center</p>
+                    <p className='salah-left-peragraph'>The Shaha is not just a mosque for prayers rather it is a community center for all.
+                        The Center is committed to preserving an Islamic identity, building and
+                        supporting a viable Muslim community, promoting a comprehensive Islamic
+                        way of life based on the Holy Quran and the
+                        Sunnah of Prophet Muhammad.</p>
+                        <button className='salah-right-btn'>Read More</button>
                 </div>
             </div>
         </>

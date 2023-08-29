@@ -1,5 +1,6 @@
 :root {
     --primary-color: #441a05;
+    --secondry-color:#9d9087;
 }
 
 .salah-right-section {
@@ -29,4 +30,38 @@
     width:20%;
     font-size: 20px;
     font-weight: 500;
+}
+.salah-left-section{
+    background-image: url('../../image/prayer-right-sectiionibg.webp');
+    background-size: cover;
+    padding: 120px;
+}
+.prayer-right-header{
+    width: 60%;
+    font-family: cinzel decorative,cursive;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: left;
+    color: var(--primary-color);
+}
+.salah-left-peragraph{
+    color: var(--secondry-color);
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: 2rem;
+    width: 70%;
+    padding: 50px 0 0 0;
+}
+.salah-right-btn{
+    padding: 13px 20px;
+    border-radius: 6px;
+    color: white;
+    background-color: #57A68F;
+    margin-top: 50px;
+}
+.salah-right-btn:hover{
+    background-color: #CF962E;
 }
