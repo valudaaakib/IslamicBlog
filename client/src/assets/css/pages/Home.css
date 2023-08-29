@@ -1,0 +1,32 @@
+:root {
+    --primary-color: #441a05;
+}
+
+.salah-right-section {
+    background-image: url('../../image/salah-bg-right-image.webp');
+    height: auto;
+    width: 35%;
+    padding: 50px;
+}
+
+.salah-left-section {
+    width: 65%;
+}
+.salah-table{
+    border-bottom: 1px solid black;
+    line-height: 2.75rem; /* 28px */
+ 
+}
+
+.prayer-salah-names {
+    color: var(--primary-color);
+    width: 70%;
+    font-size: 20px;
+    font-weight: 500;
+}
+.prayer-salah-times{
+    color: white;
+    width:20%;
+    font-size: 20px;
+    font-weight: 500;
+}
