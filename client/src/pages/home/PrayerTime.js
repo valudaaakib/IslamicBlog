@@ -64,7 +64,7 @@ const PrayerTime = () => {
                     <p className='text-center pt-5'>Powerd by <span className='hover:text-white'>Muslim Pro</span></p>
                 </div>
                 <div className='salah-left-section'>
-                    my name is amil patel
+                    my name is amil arif patel
                 </div>
             </div>
         </>
