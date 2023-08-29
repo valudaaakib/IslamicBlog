@@ -1,3 +1,59 @@
-h1 {
-  color: red;
+:root {
+  --primary-color: #8a9535;
+  --secondary-color: #f79d05;
+}
+
+.header-topbar-main {
+  display: flex;
+  color: #fff;
+  margin: auto;
+  background-color: var(--primary-color);
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.3);
+  background-image: url("../image/top_bar_back.png");
+  background-repeat: repeat-x;
+  background-position: left, right;
+  justify-content: space-around;
+}
+.header-topbar-sections {
+  display: flex;
+  padding: 12px;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  gap: 40px;
+}
+.topbar-icons i {
+  display: flex;
+  align-items: center;
+}
+
+.topbar-icon-link {
+  display: inline-block;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+.topbar-icon-link i {
+  background-color: #a1ab57;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.topbar-icon-link i:hover {
+  background-color: var(--secondary-color);
+}
+
+@media screen and (max-width: 900px) {
+  .header-topbar-main {
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header-topbar-sections {
+    display: block;
+  }
 }
