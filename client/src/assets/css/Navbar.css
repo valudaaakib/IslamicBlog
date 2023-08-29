@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #8a9535;
-  --secondary-color: #f79d05;
+  --primary-color: #d1ad3c;
+  --secondary-color: #2a486c;
 }
 
 .header-topbar-main {
@@ -8,7 +8,6 @@
   color: #fff;
   margin: auto;
   background-color: var(--primary-color);
-  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.3);
   background-image: url("../image/top_bar_back.png");
   background-repeat: repeat-x;
   background-position: left, right;
@@ -19,20 +18,19 @@
   padding: 12px;
   font-size: 16px;
   letter-spacing: 1.3px;
-  gap: 40px;
+  gap: 30px;
 }
 .topbar-icons i {
   display: flex;
   align-items: center;
 }
-
 .topbar-icon-link {
   display: inline-block;
   margin: 0 10px;
   transition: color 0.3s ease;
 }
 .topbar-icon-link i {
-  background-color: #a1ab57;
+  background-color: var(--secondary-color);
   width: 28px;
   height: 28px;
   display: flex;
@@ -42,9 +40,20 @@
   font-size: 14px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
-.topbar-icon-link i:hover {
-  background-color: var(--secondary-color);
+.navbar-button {
+  background-color: var(--primary-color);
+  color: white;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 14.5px 35px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 40px;
+  transition: all 0.15s linear;
+}
+.navbar-button:hover {
+  background-color: var(--primary-color);
 }
 
 @media screen and (max-width: 900px) {
@@ -55,5 +64,7 @@
 @media screen and (max-width: 600px) {
   .header-topbar-sections {
     display: block;
+    font-size: 10px;
+    padding: 6px;
   }
 }
