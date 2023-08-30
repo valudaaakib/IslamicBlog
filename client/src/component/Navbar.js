@@ -37,7 +37,7 @@ const Navbar = () => {
       </div>
 
       <header>
-        <nav className="fixed w-full bg-white shadow-md px-10">
+        <nav className="w-full bg-white shadow-md px-10">
           <div className="lg:flex block items-center lg:px-6 py-4 justify-between">
             <div>
               <NavLink to="/">

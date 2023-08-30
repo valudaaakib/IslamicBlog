@@ -1,211 +1,118 @@
-:root {
-    --primary-color: #d1ad3c;
-    --secondary-color: #2a486c;
-}
-
-.main-prayer-section {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 /* PRAYER LEFT SECTION */
 .salah-left-section {
-    background-image: url('../../image/salah-bg-right-image.webp');
-    height: auto;
-    width: 35%;
-    padding: 50px;
+  background-image: url("../../image/salah-bg-right-image.webp");
+  width: 35%;
+  padding: 50px;
 }
-
 .salah-right-section {
-    width: 65%;
+  width: 65%;
 }
-
-.salah-table {
-    border-bottom: 1px solid black;
-    line-height: 2.75rem;
-}
-
 .prayer-salah-names {
-    width: 70%;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.prayer-salah-times {
-    color: white;
-    width: 30%;
-    font-size: 20px;
-    font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 /* PRAYER RIGHT SECCTION START */
 .salah-right-section {
-    background-image: url('../../image/prayer-right-sectiionibg.webp');
-    background-size: cover;
-    padding: 80px;
+  background-image: url("../../image/prayer-right-sectiionibg.webp");
+  background-size: cover;
+  padding: 80px;
 }
-
 .prayer-right-header {
-    width: 60%;
-    font-family: cinzel decorative, cursive;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 1.2em;
-    text-align: left;
-    color: var(--primary-color);
+  width: 60%;
+  font-size: 40px;
+  line-height: 1.2em;
+  color: var(--primary-color);
 }
-
 .salah-left-peragraph {
-    color: var(--secondry-color);
-    font-family: inherit;
-    font-size: 100%;
-    font-style: inherit;
-    font-weight: inherit;
-    line-height: 2rem;
-    width: 70%;
-    padding: 50px 0 0 0;
+  color: var(--secondry-color);
+  width: 70%;
 }
-
 .salah-right-btn {
-    padding: 13px 20px;
-    border-radius: 6px;
-    color: white;
-    margin-top: 50px;
-    background-color: var(--secondary-color);
-    transition: transform 0.3s ease-in-out;
+  padding: 13px 20px;
+  border-radius: 6px;
+  color: white;
+  margin-top: 50px;
+  background-color: var(--secondary-color);
+  transition: transform 0.3s ease-in-out;
 }
-
 .salah-right-btn:hover {
-    background-color: var(--primary-color);
-    transform: translateX(10px);
+  background-color: var(--primary-color);
+  transform: translateX(10px);
 }
 
-@media only screen and (max-width:1135px) and (min-width: 900px) {
-    .salah-left-section {
-        width: 50%;
-        padding: 20px 20px 0 40px;
-    }
+@media only screen and (max-width: 1135px) and (min-width: 900px) {
+  .salah-left-section {
+    width: 50%;
+    padding: 20px 20px 0 40px;
+  }
 
-    .salah-right-section {
-        width: 50%;
-        padding: 90px 20px 0 40px;
-    }
+  .salah-right-section {
+    width: 50%;
+    padding: 90px 0px 0 40px;
+  }
 
-    .prayer-right-header {
-        width: 100%;
-    }
+  .prayer-right-header {
+    width: 100%;
+  }
 
-    .salah-left-peragraph {
-        width: 90%;
-    }
+  .salah-left-peragraph {
+    width: 90%;
+  }
 }
-
 @media screen and (max-width: 900px) {
-    .main-prayer-section {
-        display: block;
-    }
+  .salah-left-section {
+    width: 100%;
+  }
 
-    .salah-left-section {
-        width: 100%;
-    }
+  .salah-right-section {
+    width: 100%;
+    padding: 20px;
+  }
 
-    .salah-right-section {
-        width: 100%;
-        padding: 20px;
-    }
+  .prayer-right-header {
+    width: 100%;
+  }
 
-    .prayer-right-header {
-        margin: 0 auto;
-        width: 100%;
-    }
+  .salah-left-peragraph {
+    width: 90%;
+  }
 
-    .salah-left-peragraph {
-        width: 90%;
-        margin: 0 auto;
-        margin-left: 3%;
-    }
-
-    .salah-right-btn {
-        margin-left: 3%;
-    }
+  .salah-right-btn {
+    margin-left: 3%;
+  }
 }
-
 @media screen and (max-width: 400px) {
-    .salah-left-section {
-        padding: 20px 0 50px 0;
-
-    }
+  .salah-left-section {
+    padding: 20px 0 50px 0;
+  }
 }
 
 /* ISLAMIC FOUR PILLER SECTION START */
-.islamic-main-four-piller {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 50px auto;
-    width: 80%;
+.four-piller-outside {
+  border: 1px solid #d1ad3c;
+  border-radius: 100%;
+  width: 90px;
+  padding: 10px;
+  margin: 0 auto;
 }
-
-.four-piller-outside-div {
-    border: 1px solid #D1AD3C;
-    border-radius: 100%;
-    width: 35%;
-    padding: 10px;
-    margin: 0 auto;
+.four-piller-inside {
+  border: 1px solid white;
+  border-radius: 100%;
+  width: 100%;
+  padding: 12%;
 }
-
-.four-piller-inside-div {
-    border: 1px solid white;
-    border-radius: 100%;
-    width: 100%;
-    padding: 15px;
-    height: auto;
+.pillers-sections:hover .four-piller-inside {
+  background-color: var(--primary-color);
 }
-
-.main-hover-div:hover .four-piller-inside-div {
-    background-color: var(--primary-color);
-}
-
-.salah-image {
-    width: 100%;
-}
-
 .four-piller-names {
-    font-size: 25px;
-    font-weight: 700;
-    color: var(--secondary-color);
-    text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  text-align: center;
 }
-
 .four-piller-discription {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-@media only screen and (max-width:1023px) and (min-width: 769px) {
-    .four-piller-outside-div {
-        width: 25%;
-    }
-}
-@media only screen and (min-width:768px) and (max-width: 769px){
-.four-piller-outside-div{
-    width: 25%;
-}
-}
-@media only screen and (min-width:631px) and (max-width: 767px) {
-    .four-piller-outside-div {
-        width: 15%;
-    }
-}
-
-@media screen and (max-width: 630px) {
-    .four-piller-outside-div {
-        width: 20%;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .four-piller-outside-div {
-        width: 30%;
-    }
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
 }
