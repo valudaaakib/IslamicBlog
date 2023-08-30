@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "../assets/css/Navbar.css";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const [openMenu, setOpenMenu] = useState(false);
   return (
     <>
       <div className="header-topbar-main">
@@ -37,8 +38,8 @@ const Navbar = () => {
 
       <header>
         <nav className="fixed w-full bg-white shadow-md px-10">
-          <div className="flex items-center px-6 py-4 justify-between">
-            <div className="flex items-center space-x-4">
+          <div className="lg:flex block items-center lg:px-6 py-4 justify-between">
+            <div>
               <NavLink to="/">
                 <img
                   src={require("../assets/image/logo.webp")}
@@ -48,30 +49,37 @@ const Navbar = () => {
                 />
               </NavLink>
             </div>
-            <ul className="flex space-x-6">
+            <ul
+              className={`lg:space-x-6 lg:space-y-0 space-y-2 lg:mt-0 mt-5 font-semibold tracking-wider navbar-menu lg:flex ${
+                openMenu ? "" : "hidden"
+              }`}
+            >
               <li>
                 <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <NavLink to="/">About</NavLink>
+                <NavLink to="/about">About</NavLink>
               </li>
               <li>
-                <NavLink to="/">Services</NavLink>
+                <NavLink to="/service">Services</NavLink>
               </li>
               <li>
-                <NavLink to="/">Contact</NavLink>
-              </li>
-              <li>
-                <NavLink to="/">Home</NavLink>
-              </li>
-              <li>
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
               </li>
             </ul>
-            <div>
-              <NavLink to="/" className="navbar-button">
+            <div className="lg:block hidden">
+              <NavLink to="/" id="navbar-button">
                 Wants To Visit?
               </NavLink>
+            </div>
+            <div className="toggle-btn">
+              <button
+                onClick={() => {
+                  setOpenMenu(!openMenu);
+                }}
+              >
+                <i className="fa-solid fa-bars"></i>
+              </button>
             </div>
           </div>
         </nav>
