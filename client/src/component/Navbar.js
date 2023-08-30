@@ -68,7 +68,7 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="lg:block hidden">
-              <NavLink to="/" className="navbar-button">
+              <NavLink to="/" id="navbar-button">
                 Wants To Visit?
               </NavLink>
             </div>
