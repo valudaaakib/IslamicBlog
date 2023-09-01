@@ -36,9 +36,9 @@ const Navbar = () => {
         </div>
       </div>
 
-      <header>
+      <header className="sticky top-0 z-10">
         <nav className="w-full bg-white shadow-md px-10">
-          <div className="lg:flex block items-center lg:px-6 py-4 justify-between">
+          <div className="lg:flex block items-center lg:px-6 lg:py-4 py-2 justify-between">
             <div>
               <NavLink to="/">
                 <img
@@ -55,16 +55,24 @@ const Navbar = () => {
               }`}
             >
               <li>
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/" className="nav-link">
+                  Home
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/about">About</NavLink>
+                <NavLink to="/about" className="nav-link">
+                  About
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/service">Services</NavLink>
+                <NavLink to="/service" className="nav-link">
+                  Services
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/contact">Contact</NavLink>
+                <NavLink to="/contact" className="nav-link">
+                  Contact
+                </NavLink>
               </li>
             </ul>
             <div className="lg:block hidden">

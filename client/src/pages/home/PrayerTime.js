@@ -16,30 +16,40 @@ const PrayerTime = () => {
           <table className="mx-auto">
             <tbody>
               <tr className="border-b border-black">
-                <td className="text-xl font-semibold">Fajar</td>
+                <td className="text-xl font-semibold pb-2">Fajar</td>
                 <td className="text-white text-xl font-semibold w-1/3">
                   04:38 AM
                 </td>
               </tr>
               <tr className="border-b border-black leading-10">
-                <td className="text-xl font-semibold">Fajar</td>
-                <td className="text-white text-xl font-semibold">04:38 AM</td>
+                <td className="text-xl font-semibold pt-4 pb-2">Fajar</td>
+                <td className="text-white text-xl font-semibold pt-4">
+                  04:38 AM
+                </td>
               </tr>
               <tr className="border-b border-black leading-10">
-                <td className="text-xl font-semibold">Sunrise</td>
-                <td className="text-white text-xl font-semibold">05:52 AM</td>
+                <td className="text-xl font-semibold pt-4 pb-2">Sunrise</td>
+                <td className="text-white text-xl font-semibold pt-4">
+                  05:52 AM
+                </td>
               </tr>
               <tr className="border-b border-black leading-10">
-                <td className="text-xl font-semibold">Dhuhr</td>
-                <td className="text-white text-xl font-semibold">11:57 AM</td>
+                <td className="text-xl font-semibold pt-4 pb-2">Dhuhr</td>
+                <td className="text-white text-xl font-semibold pt-4">
+                  11:57 AM
+                </td>
               </tr>
               <tr className="border-b border-black leading-10">
-                <td className="text-xl font-semibold">Fajar</td>
-                <td className="text-white text-xl font-semibold">04:38 AM</td>
+                <td className="text-xl font-semibold pt-4 pb-2">Fajar</td>
+                <td className="text-white text-xl font-semibold pt-4">
+                  04:38 AM
+                </td>
               </tr>
               <tr className="border-b border-black leading-10">
-                <td className="text-xl font-semibold">Fajar</td>
-                <td className="text-white text-xl font-semibold">04:38 AM</td>
+                <td className="text-xl font-semibold pt-4 pb-2">Fajar</td>
+                <td className="text-white text-xl font-semibold pt-4">
+                  04:38 AM
+                </td>
               </tr>
             </tbody>
           </table>
