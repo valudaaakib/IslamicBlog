@@ -1,11 +1,14 @@
 import React from "react";
 import "../../assets/css/pages/Home.css";
 
-const FourPillers = () => {
+const Categories = () => {
   return (
     <>
-      <div className="flex flex-wrap w-4/5 mx-auto my-10">
-        <div className="lg:w-1/4 md:w-1/2 w-full py-7 pillers-sections">
+      <div className="w-4/5 mx-auto my-5">
+        <span className="section_title">اقسام:-</span>
+      </div>
+      <div className="flex flex-wrap w-4/5 mx-auto mb-10">
+        <div className="lg:w-1/4 md:w-1/2 w-full py-7 pillers-sections cursor-pointer">
           <div className="four-piller-outside">
             <div className="four-piller-inside">
               <img
@@ -15,12 +18,12 @@ const FourPillers = () => {
               ></img>
             </div>
           </div>
-          <p className="four-piller-names">Salah</p>
+          <p className="four-piller-names">صلاح</p>
           <p className="four-piller-discription">
-            Salat Pillar of Islam dolor amet, consectetur adipiscing.
+            عرض جمعت منتصف تم, تكاليف الأرواح الا كل. ما لان وحتى الثالث.
           </p>
         </div>
-        <div className="lg:w-1/4 md:w-1/2 w-full py-7 pillers-sections">
+        <div className="lg:w-1/4 md:w-1/2 w-full py-7 pillers-sections cursor-pointer">
           <div className="four-piller-outside">
             <div className="four-piller-inside">
               <img
@@ -30,12 +33,12 @@ const FourPillers = () => {
               ></img>
             </div>
           </div>
-          <p className="four-piller-names">Salah</p>
+          <p className="four-piller-names">صلاح</p>
           <p className="four-piller-discription">
-            Salat Pillar of Islam dolor amet, consectetur adipiscing.
+            عرض جمعت منتصف تم, تكاليف الأرواح الا كل. ما لان وحتى الثالث.
           </p>
         </div>
-        <div className="lg:w-1/4 md:w-1/2 w-full py-7 pillers-sections">
+        <div className="lg:w-1/4 md:w-1/2 w-full py-7 pillers-sections cursor-pointer">
           <div className="four-piller-outside">
             <div className="four-piller-inside">
               <img
@@ -45,12 +48,12 @@ const FourPillers = () => {
               ></img>
             </div>
           </div>
-          <p className="four-piller-names">Salah</p>
+          <p className="four-piller-names">صلاح</p>
           <p className="four-piller-discription">
-            Salat Pillar of Islam dolor amet, consectetur adipiscing.
+            عرض جمعت منتصف تم, تكاليف الأرواح الا كل. ما لان وحتى الثالث.
           </p>
         </div>
-        <div className="lg:w-1/4 md:w-1/2 w-full py-7 pillers-sections">
+        <div className="lg:w-1/4 md:w-1/2 w-full py-7 pillers-sections cursor-pointer">
           <div className="four-piller-outside">
             <div className="four-piller-inside">
               <img
@@ -60,9 +63,9 @@ const FourPillers = () => {
               ></img>
             </div>
           </div>
-          <p className="four-piller-names">Salah</p>
+          <p className="four-piller-names">صلاح</p>
           <p className="four-piller-discription">
-            Salat Pillar of Islam dolor amet, consectetur adipiscing.
+            عرض جمعت منتصف تم, تكاليف الأرواح الا كل. ما لان وحتى الثالث.
           </p>
         </div>
       </div>
@@ -70,4 +73,4 @@ const FourPillers = () => {
   );
 };
 
-export default FourPillers;
+export default Categories;

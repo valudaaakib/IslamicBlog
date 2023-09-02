@@ -23,7 +23,6 @@
 .four-piller-names {
   font-size: 25px;
   font-weight: 700;
-  color: var(--secondary-color);
   text-align: center;
 }
 .four-piller-discription {
@@ -33,6 +32,14 @@
 }
 
 /* HERO BANNER CSS */
-.hero_banner{
-  background-image: url('../../image/banner-img-1.webp');
+.hero_banner {
+  background-image: url("../../image/banner-img-1.webp");
+}
+.section_title {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--secondary-color);
+  padding-bottom: 4px;
+  border-bottom: 3px solid var(--primary-color);
+  text-align: center;
 }

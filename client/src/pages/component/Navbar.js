@@ -10,12 +10,16 @@ const Navbar = () => {
       <div className="header-topbar-main">
         <div className="header-topbar-sections">
           <div>
-            <i className="fa-solid fa-phone me-2"></i>
-            <span>فون: 7383294925</span>
+            <NavLink to="tel:7383294925">
+              <i className="fa-solid fa-phone me-2"></i>
+              <span>فون: 7383294925</span>
+            </NavLink>
           </div>
           <div>
-            <i className="fa-solid fa-envelope me-2"></i>
-            <span>ای میل: ahmadpadarwala4@gmail.com</span>
+            <NavLink to="mailto:ahmadpadarwala4@gmail.com">
+              <i className="fa-solid fa-envelope me-2"></i>
+              <span>ای میل: ahmadpadarwala4@gmail.com</span>
+            </NavLink>
           </div>
         </div>
         <div className="header-topbar-sections">
