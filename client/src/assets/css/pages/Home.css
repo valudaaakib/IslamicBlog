@@ -1,93 +1,3 @@
-/* PRAYER LEFT SECTION */
-.salah-left-section {
-  background-image: url("../../image/salah-bg-right-image.webp");
-  width: 35%;
-  padding: 50px;
-}
-.salah-right-section {
-  width: 65%;
-}
-.prayer-salah-names {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-/* PRAYER RIGHT SECCTION START */
-.salah-right-section {
-  background-image: url("../../image/prayer-right-sectiionibg.webp");
-  background-size: cover;
-  padding: 80px;
-}
-.prayer-right-header {
-  width: 60%;
-  font-size: 40px;
-  line-height: 1.2em;
-  color: var(--primary-color);
-}
-.salah-left-peragraph {
-  color: var(--secondry-color);
-  width: 70%;
-}
-.salah-right-btn {
-  padding: 13px 20px;
-  border-radius: 6px;
-  color: white;
-  margin-top: 50px;
-  background-color: var(--secondary-color);
-  transition: transform 0.3s ease-in-out;
-}
-.salah-right-btn:hover {
-  background-color: var(--primary-color);
-  transform: translateX(10px);
-}
-
-@media only screen and (max-width: 1135px) and (min-width: 900px) {
-  .salah-left-section {
-    width: 50%;
-    padding: 20px 20px 0 40px;
-  }
-
-  .salah-right-section {
-    width: 50%;
-    padding: 90px 0px 0 40px;
-  }
-
-  .prayer-right-header {
-    width: 100%;
-  }
-
-  .salah-left-peragraph {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 900px) {
-  .salah-left-section {
-    width: 100%;
-  }
-
-  .salah-right-section {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .prayer-right-header {
-    width: 100%;
-  }
-
-  .salah-left-peragraph {
-    width: 90%;
-  }
-
-  .salah-right-btn {
-    margin-left: 3%;
-  }
-}
-@media screen and (max-width: 400px) {
-  .salah-left-section {
-    padding: 20px 0 50px 0;
-  }
-}
-
 /* ISLAMIC FOUR PILLER SECTION START */
 .four-piller-outside {
   border: 1px solid #d1ad3c;
@@ -95,12 +5,17 @@
   width: 90px;
   padding: 10px;
   margin: 0 auto;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
 }
 .four-piller-inside {
   border: 1px solid white;
   border-radius: 100%;
   width: 100%;
   padding: 12%;
+}
+.pillers-sections:hover {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 .pillers-sections:hover .four-piller-inside {
   background-color: var(--primary-color);
@@ -115,4 +30,9 @@
   width: 95%;
   margin: 0 auto;
   text-align: center;
+}
+
+/* HERO BANNER CSS */
+.hero_banner{
+  background-image: url('../../image/banner-img-1.webp');
 }

@@ -49,6 +49,8 @@
   position: relative;
   padding-bottom: 5px;
   transition: color 0.3s ease;
+  margin-left: 20px;
+  color: var(--secondary-color);
 }
 
 .nav-link::before {

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import "../assets/css/Navbar.css";
+import "../../assets/css/Navbar.css";
 import { NavLink } from "react-router-dom";
+import { Logo } from "../../assets/constant/Images";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -10,15 +11,15 @@ const Navbar = () => {
         <div className="header-topbar-sections">
           <div>
             <i className="fa-solid fa-phone me-2"></i>
-            <span>Phone: 73832 94925</span>
+            <span>فون: 7383294925</span>
           </div>
           <div>
             <i className="fa-solid fa-envelope me-2"></i>
-            <span>Email: ahmadpadarwala4@gmail.com</span>
+            <span>ای میل: ahmadpadarwala4@gmail.com</span>
           </div>
         </div>
         <div className="header-topbar-sections">
-          <span>Follow us: </span>
+          <span> فالو کریں: </span>
           <span className="topbar-icons">
             <NavLink to="/" className="topbar-icon-link">
               <i className="fa-brands fa-facebook-f"></i>
@@ -41,43 +42,33 @@ const Navbar = () => {
           <div className="lg:flex block items-center lg:px-6 lg:py-4 py-2 justify-between">
             <div>
               <NavLink to="/">
-                <img
-                  src={require("../assets/image/logo.webp")}
-                  alt="logo"
-                  width="144px"
-                  height="auto"
-                />
+                <img src={Logo} alt="logo" width="144px" height="auto" />
               </NavLink>
             </div>
             <ul
-              className={`lg:space-x-6 lg:space-y-0 space-y-2 lg:mt-0 mt-5 font-semibold tracking-wider navbar-menu lg:flex ${
+              className={`lg:space-y-0 space-y-2 lg:mt-0 mt-5 font-semibold navbar-menu lg:flex ${
                 openMenu ? "" : "hidden"
               }`}
             >
               <li>
                 <NavLink to="/" className="nav-link">
-                  Home
+                  مرکزی صفحہ
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/about" className="nav-link">
-                  About
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/service" className="nav-link">
-                  Services
+                  بارے میں
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/contact" className="nav-link">
-                  Contact
+                  رابطہ کریں
                 </NavLink>
               </li>
             </ul>
             <div className="lg:block hidden">
               <NavLink to="/" id="navbar-button">
-                Wants To Visit?
+                دورہ کرنا چاہتے ہے؟
               </NavLink>
             </div>
             <div className="toggle-btn">
