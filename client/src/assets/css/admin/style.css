@@ -1,0 +1,45 @@
+/* ADMIN LOGIN COMPONENT CSS */
+.box {
+  width: 450px;
+  padding: 40px;
+  background: #191919;
+  transition: 0.25s;
+}
+.box input[type="text"],
+.box input[type="password"] {
+  margin: 20px auto;
+  border: 2px solid #3498db;
+  width: 250px;
+  transition: 0.25s;
+}
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+  width: 300px;
+  border-color: #2ecc71;
+}
+.box input[type="submit"] {
+  margin: 20px auto;
+  border: 2px solid #2ecc71;
+  transition: 0.25s;
+}
+.box input[type="submit"]:hover {
+  background: #2ecc71;
+}
+/* DASHBOARD COMPONENT CSS */
+/* ===== Google Font Import - Poppins ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+.sidebar {
+  width: 250px;
+  font-family: "Poppins", sans-serif;
+}
+.dashboard {
+  left: 250px;
+  width: calc(100% - 250px);
+  font-family: "Poppins", sans-serif;
+}
+.boxes {
+  border-radius: 12px;
+  width: calc(100% / 3 - 15px);
+  padding: 35px 0px;
+  transition: all 0.5s ease;
+}

@@ -3,6 +3,7 @@ import Categories from "./Categories";
 import Navbar from "../component/Navbar";
 import HeroSection from "./HeroSection";
 import Blogs from "./Books";
+import News from "./News";
 import "../../assets/css/pages/Home.css";
 
 const index = () => {
@@ -12,6 +13,7 @@ const index = () => {
       <HeroSection />
       <Categories />
       <Blogs />
+      <News />
     </>
   );
 };

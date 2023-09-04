@@ -14,6 +14,7 @@ const names_routes = require("./Routes/Names/Names");
 const bookscategory_routes = require("./Routes/Books/BookCategory");
 const books_routes = require("./Routes/Books/Books");
 // const blogPost_route = require('./Routes/Blog/BlogPost');
+const user_route = require("./Routes/user/User");
 
 // Middlewares
 app.use(express.json());
@@ -42,6 +43,7 @@ app.use("/", bookscategory_routes);
 app.use("/", books_routes);
 
 // app.use('/', blogPost_route);
+app.use("/", user_route);
 
 app.listen(1005, () => {
   console.log("SERVER CREATED");

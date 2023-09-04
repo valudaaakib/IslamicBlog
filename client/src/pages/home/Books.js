@@ -6,7 +6,7 @@ const Books = () => {
   return (
     <>
       <div className="w-full bg-gray-100">
-        <div className="w-4/5 mx-auto flex flex-wrap mb-10 py-6">
+        <div className="w-4/5 mx-auto flex flex-wrap py-6">
           <div className="w-full">
             <div>
               <span className="section_title">کتابیں:-</span>
@@ -20,7 +20,7 @@ const Books = () => {
                   className="flex my-3 list-none flex-wrap flex-row rounded tabs-section"
                   role="tablist"
                 >
-                  <li className="flex-auto text-center me-2 tab-list">
+                  <li className="flex-auto text-center me-2 last:me-0  lg:mb-0 mb-2 tab-list">
                     <NavLink
                       className={
                         "text-xs font-bold uppercase px-3 py-3 rounded block"
@@ -36,7 +36,7 @@ const Books = () => {
                       PRODUCT SPECIFICATION
                     </NavLink>
                   </li>
-                  <li className="flex-auto text-center me-2 tab-list">
+                  <li className="flex-auto text-center me-2 last:me-0  lg:mb-0 mb-2 tab-list">
                     <NavLink
                       className={
                         "text-xs font-bold uppercase px-3 py-3 rounded block"
@@ -52,7 +52,7 @@ const Books = () => {
                       PRODUCT SPECIFICATION
                     </NavLink>
                   </li>
-                  <li className="flex-auto text-center me-2 tab-list">
+                  <li className="flex-auto text-center me-2 last:me-0  lg:mb-0 mb-2 tab-list">
                     <NavLink
                       className={
                         "text-xs font-bold uppercase px-3 py-3 rounded block"
@@ -68,7 +68,7 @@ const Books = () => {
                       PRODUCT SPECIFICATION
                     </NavLink>
                   </li>
-                  <li className="flex-auto text-center tab-list">
+                  <li className="flex-auto text-center me-2 last:me-0 lg:mb-0 mb-2 tab-list">
                     <NavLink
                       className={
                         "text-xs font-bold uppercase px-3 py-3 rounded block"
@@ -85,7 +85,7 @@ const Books = () => {
                     </NavLink>
                   </li>
                 </ul>
-                <div className="mx-auto relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
+                <div className="mx-auto relative flex flex-col bg-white mb-6 shadow-lg rounded">
                   <div className="px-3 py-5">
                     <div
                       className={openTab === 1 ? "block" : "hidden"}
@@ -93,7 +93,7 @@ const Books = () => {
                     >
                       {/* fdvdfv */}
 
-                      <div className="flex flex-wrap justify-between">
+                      <div className="flex flex-wrap justify-around">
                         <div className="islamic-books shadow-lg">
                           <div className="islamic-books-main">
                             <img
