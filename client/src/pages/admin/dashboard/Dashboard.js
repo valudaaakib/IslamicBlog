@@ -4,7 +4,6 @@ import axios from "axios";
 
 const Dashboard = () => {
   const [blogPost, setBlogPost] = useState([]);
-  const [blogActivity, setBlogActivity] = useState([]);
   const [pb, setPb] = useState(0);
   const [df, setDf] = useState(0);
   let published = 0;
@@ -12,7 +11,6 @@ const Dashboard = () => {
 
   useEffect(() => {
     getPosts();
-    getActivityPosts();
   }, []);
 
   const getPosts = async () => {
@@ -29,15 +27,6 @@ const Dashboard = () => {
       });
       setPb(published);
       setDf(draft);
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
-  const getActivityPosts = async (req, res) => {
-    try {
-      const res = await axios.get("/getblogactivity");
-      setBlogActivity(res.data);
     } catch (err) {
       console.log(err);
     }

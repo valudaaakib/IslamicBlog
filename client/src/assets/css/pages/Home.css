@@ -106,6 +106,7 @@
   position: relative;
   border-radius: 6px;
   cursor: pointer;
+  overflow: hidden;
 }
 .news-category-name {
   text-transform: uppercase;

@@ -46,14 +46,14 @@ const Sidebar = () => {
           </div>
           <div
             className={`mb-2 cursor-pointer py-2 pl-3 pr-6 rounded-md ${
-              location.pathname === "/allblogpost"
+              location.pathname === "/blogcategory"
                 ? "bg-blue-500"
                 : "hover:bg-blue-500"
             } transition-colors duration-300 flex items-center`}
           >
-            <NavLink to="/allblogpost">
+            <NavLink to="/blogcategory">
               <i className="fa-solid fa-layer-group"></i>
-              <span className="ml-3">All Blogs</span>
+              <span className="ml-3">Blog Category</span>
             </NavLink>
           </div>
 
@@ -70,18 +70,6 @@ const Sidebar = () => {
         onClose={handleCloseModal}
         onLogout={handleLogout}
       />
-      <section className="dashboard relative px-6 py-3 bg-slate-950 shadow-md">
-        <div className="flex justify-between items-center">
-          <div className="relative flex items-center w-5/12 ml-auto">
-            <input
-              type="text"
-              placeholder="Search here..."
-              className="border border-gray-300 w-full rounded-md px-3 py-2 pr-10 focus:outline-none"
-            />
-            <i className="fa-solid fa-search text-gray-600 absolute right-3 top-1/2 transform -translate-y-1/2"></i>
-          </div>
-        </div>
-      </section>
     </>
   );
 };
