@@ -43,3 +43,36 @@
   border-bottom: 3px solid var(--primary-color);
   text-align: center;
 }
+
+/* BOOKS COMPONENTS CSS */
+/* .tabs-section .active {
+  background-color: #d1ad3c;
+  color: white;
+} */
+.tab-list {
+  background-color: white;
+  border: 1px solid rgb(218, 215, 215);
+  border-radius: 5px;
+}
+.islamic-books {
+  width: 22%;
+  background-color: #f7f4f4;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.islamic-book-image {
+  width: 100%;
+  height: min-content;
+  transition: transform 0.3s !important;
+}
+
+.islamic-book-image:hover {
+  transform: scale(1.2) !important;
+  transition: 0.3s !important;
+}
+
+.islamic-books-main {
+  border-radius: 10px;
+  overflow: hidden;
+}

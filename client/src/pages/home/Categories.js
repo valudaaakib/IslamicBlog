@@ -1,5 +1,4 @@
 import React from "react";
-import "../../assets/css/pages/Home.css";
 
 const Categories = () => {
   return (
